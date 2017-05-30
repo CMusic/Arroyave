@@ -27,7 +27,7 @@
         android:text="Usuario:"
         android:textColor="#000000"
         android:textStyle="italic"
-        android:textSize="15sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -42,13 +42,13 @@
         android:text="Contraseña:"
         android:textColor="#000000"
         android:textStyle="italic"
-        android:textSize="15sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.56"
-        app:layout_constraintHorizontal_bias="0.113" />
+        app:layout_constraintVertical_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.114" />
 
     <EditText
         android:id="@+id/editText"
@@ -76,7 +76,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.792"
-        app:layout_constraintVertical_bias="0.566" />
+        app:layout_constraintVertical_bias="0.521" />
 
     <ToggleButton
         android:id="@+id/toggleButton"
@@ -90,20 +90,21 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.883"
-        app:layout_constraintVertical_bias="0.716"
-        tools:layout_editor_absoluteX="256dp" />
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintVertical_bias="0.649" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="280dp"
-        android:layout_height="62dp"
+        android:layout_width="230dp"
+        android:layout_height="96dp"
         android:text=""
 android:background="@drawable/ingeniera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.919" />
+        app:layout_constraintVertical_bias="0.961"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="399dp" />
 
 </android.support.constraint.ConstraintLayout>
