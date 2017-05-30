@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="384dp"
         android:layout_height="111dp"
-        android:background="@drawable/cat"
+        android:background="@drawable/remingtonblanco"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
