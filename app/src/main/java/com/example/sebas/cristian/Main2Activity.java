@@ -57,7 +57,7 @@ public class Main2Activity extends AppCompatActivity {
         segundo= (Spinner)findViewById(R.id.dos);
 
         List listaAspirantes = new ArrayList();
-        listaAspirantes.add ("Aspirantes");
+        listaAspirantes.add ("ASPIRANTES");
         listaAspirantes.add ("Oferta Académica");
         listaAspirantes.add ("Formas de pago");
         listaAspirantes.add ("Convenios y descuentos");
@@ -90,7 +90,7 @@ public class Main2Activity extends AppCompatActivity {
         tercero = (Spinner)findViewById(R.id.tres);
 
         List listaEstudiantes = new ArrayList();
-        listaEstudiantes.add ("Estudiantes");
+        listaEstudiantes.add ("ESTUDIANTES");
         listaEstudiantes.add ("Calendario Académico");
         listaEstudiantes.add ("Tarifas Institucionales 2017");
         listaEstudiantes.add ("Plataforma Moodle");
@@ -126,7 +126,7 @@ public class Main2Activity extends AppCompatActivity {
 
         List listaDocentesTutores = new ArrayList();
 
-        listaDocentesTutores.add ("Docentes - Tutores");
+        listaDocentesTutores.add ("DOCENTES - TUTORES");
         listaDocentesTutores.add ("Plataforma Moodle");
         listaDocentesTutores.add ("Plataforma Q10");
         listaDocentesTutores.add ("Caléndario Académico");
@@ -156,7 +156,7 @@ public class Main2Activity extends AppCompatActivity {
            quinto =(Spinner)findViewById(R.id.cinco);
 
            List listaEgresados = new ArrayList();
-           listaEgresados.add ("Egresados");
+           listaEgresados.add ("EGRESADOS");
            listaEgresados.add ("Especializaciones");
           listaEgresados.add ("Correo Institucional");
           listaEgresados.add ("Directorio Administrativo");
@@ -186,7 +186,7 @@ public class Main2Activity extends AppCompatActivity {
           sexto  =(Spinner)findViewById(R.id.sei);
              List  listaAdministrativos = new ArrayList();
 
-        listaAdministrativos.add ("Administrativos");
+        listaAdministrativos.add ("ADMINISTRATIVOS");
         listaAdministrativos.add ("Plataforma Q10");
         listaAdministrativos.add ("Correo Institucional");
          listaAdministrativos.add ("Directorio Administrativo");
