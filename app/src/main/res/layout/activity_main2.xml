@@ -9,21 +9,23 @@
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="267dp"
-        android:layout_height="78dp"
+        android:layout_width="218dp"
+        android:layout_height="38dp"
         android:textAlignment="center"
 
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036">
+        app:layout_constraintVertical_bias="0.272"
+        tools:layout_editor_absoluteY="132dp"
+        tools:layout_editor_absoluteX="85dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:textAlignment="center"
 
 
             app:layout_constraintBottom_toBottomOf="parent"
@@ -38,6 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00BFFF"
                 android:textAlignment="center" />
 
             <Spinner
@@ -45,20 +48,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAlignment="center" />
+                android:background="#00BFFF"
+                android:textAlignment="center"
+
+                />
 
             <Spinner
                 android:id="@+id/tres"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00BFFF"
+
                 android:textAlignment="center" />
 
             <Spinner
                 android:id="@+id/cuatro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:background="#00BFFF"
                 android:textAlignment="center" />
 
             <Spinner
@@ -66,6 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00BFFF"
                 android:textAlignment="center" />
 
             <Spinner
@@ -73,9 +82,62 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00BFFF"
                 android:textAlignment="center" />
 
 
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:layout_width="384dp"
+        android:layout_height="111dp"
+        android:background="@drawable/cat"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/mood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moodle"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.216"/>
+
+    <Button
+        android:id="@+id/correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <Button
+        android:id="@+id/diez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.797"/>
+
+
 </android.support.constraint.ConstraintLayout>
