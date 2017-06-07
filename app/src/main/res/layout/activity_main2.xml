@@ -24,7 +24,6 @@
         android:layout_width="91dp"
         android:layout_height="30dp"
         android:text="Moodle"
-
         android:background="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -51,7 +50,6 @@
         android:layout_width="91dp"
         android:layout_height="30dp"
         android:text="Q10"
-
         android:background="#000080"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -60,33 +58,7 @@
         app:layout_constraintVertical_bias="0.251"
         app:layout_constraintHorizontal_bias="0.884" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="356dp"
-        android:layout_height="29dp"
-        android:text=" Sede Centro: Carrera 22 Nº 21-21 PBX: 8828373"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.933" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="0dp"
-        android:layout_height="29dp"
-        android:text=" Sede Cable: Carrera 63 Nº 64-53 PBX: 8852121"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.995" />
 
     <HorizontalScrollView
         android:id="@+id/scrollView"
@@ -166,6 +138,8 @@
                 android:textAlignment="center" />
 
 
+
+
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -179,8 +153,37 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701"
+        app:layout_constraintVertical_bias="0.744"
         app:layout_constraintHorizontal_bias="0.52" />
+
+    <RadioGroup
+
+        android:id="@+id/radioinformacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964"
+        app:layout_constraintHorizontal_bias="0.54" >
+
+        <RadioButton
+            android:id="@+id/centro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sede Centro                       " />
+
+        <RadioButton
+            android:id="@+id/cable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="sede Cable" />
+    </RadioGroup>
 
 
 </android.support.constraint.ConstraintLayout>
