@@ -1,13 +1,16 @@
 package com.example.sebas.cristian;
 
 import android.content.Intent;
+import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +27,8 @@ public class Main2Activity extends AppCompatActivity {
     Button Mo;
     Button co;
     Button qd;
+
+    RadioGroup mostrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -158,8 +163,8 @@ public class Main2Activity extends AppCompatActivity {
            List listaEgresados = new ArrayList();
            listaEgresados.add ("EGRESADOS");
            listaEgresados.add ("Especializaciones");
-          listaEgresados.add ("Correo Institucional");
-          listaEgresados.add ("Directorio Administrativo");
+           listaEgresados.add ("Correo Institucional");
+           listaEgresados.add ("Directorio Administrativo");
 
          ArrayAdapter decimotercero = new ArrayAdapter(this,android.R.layout.simple_dropdown_item_1line, listaEgresados);
         decimotercero.setDropDownViewResource(android.R.layout.simple_spinner_item);
@@ -237,8 +242,37 @@ public class Main2Activity extends AppCompatActivity {
         });
 
 
-
+    mostrar = (RadioGroup)findViewById(R.id.radioinformacion);
+        this.Informacion();
         //on
+    }
+
+
+    public void Informacion() {
+
+        mostrar.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
+                switch (checkedId) {
+                    case R.id.centro:
+
+                        Toast.makeText(getApplicationContext(),"Sede Centro: Carrera 22 Nº 21-21 PBX: 8828373",Toast.LENGTH_SHORT).show();
+
+                    break;
+
+                    case R.id.cable:
+
+                        Toast.makeText(getApplicationContext(),"Sede Centro: Carrera 22 Nº 21-21 PBX: 8828373",Toast.LENGTH_SHORT).show();
+
+                        break;
+
+
+                    default:
+                        break;
+
+                }
+            }
+        });
     }
     //pr
 }
